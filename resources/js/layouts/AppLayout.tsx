@@ -30,6 +30,7 @@ export default function AppLayout({
       {/* <GoogleAnalytics trackingId={process.env.GOOGLE_ANALYTICS_ID} /> */}
       <Head>
         <title>{title}</title>
+        <meta name="google-site-verification" content="kl8osZX17jSgV1924Sbsd98x5zBHascmAyQgsnSmjD4" />
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
