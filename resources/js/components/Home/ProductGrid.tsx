@@ -39,7 +39,7 @@ export default function ProductGrid() {
       name: 'Medali Prestasi Emas',
       category: 'Medali',
       price: 'Mulai Rp25.000',
-      image: '/images/medali-1.jpg',
+      image: '',
       description: 'Medali prestasi dengan finishing emas untuk berbagai kompetisi dan acara',
       tags: ['Prestasi', 'Emas', 'Berkualitas'],
       slug: 'medali-prestasi-custom'
@@ -49,7 +49,7 @@ export default function ProductGrid() {
       name: 'Label Hijab Bordir',
       category: 'Label Hijab',
       price: 'Mulai Rp5.000',
-      image: '/images/label-hijab-1.jpg',
+      image: '',
       description: 'Label hijab dengan bordir halus dan tahan lama untuk brand fashion',
       tags: ['Bordir', 'Fashion', 'Halus'],
       slug: 'label-hijab-bordir'
@@ -69,7 +69,7 @@ export default function ProductGrid() {
       name: 'Atribut TNI/POLRI',
       category: 'Atribut',
       price: 'Mulai Rp20.000',
-      image: '/images/atribut-1.jpg',
+      image: '',
       description: 'Atribut resmi TNI/POLRI dengan kualitas standar militer',
       tags: ['Resmi', 'Militer', 'Standar'],
       slug: 'atribut-tni-polri'

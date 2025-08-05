@@ -21,7 +21,7 @@ export default function RelatedProducts({ currentProductId }: RelatedProductsPro
       name: "Medali Prestasi Custom",
       category: "Medali",
       price: "Mulai Rp25.000",
-      image: "/images/medali-1.jpg",
+      image: "",
       description: "Medali prestasi dengan berbagai pilihan finishing untuk penghargaan",
       slug: "medali-prestasi-custom"
     },
@@ -30,7 +30,7 @@ export default function RelatedProducts({ currentProductId }: RelatedProductsPro
       name: "Label Hijab Bordir",
       category: "Label Hijab",
       price: "Mulai Rp5.000",
-      image: "/images/label-hijab-1.jpg",
+      image: "",
       description: "Label hijab dengan bordir halus untuk brand fashion",
       slug: "label-hijab-bordir"
     },
@@ -48,7 +48,7 @@ export default function RelatedProducts({ currentProductId }: RelatedProductsPro
       name: "Atribut TNI/POLRI",
       category: "Atribut",
       price: "Mulai Rp20.000",
-      image: "/images/atribut-1.jpg",
+      image: "",
       description: "Atribut resmi TNI/POLRI dengan kualitas standar militer",
       slug: "atribut-tni-polri"
     }
