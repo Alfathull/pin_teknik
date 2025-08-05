@@ -107,148 +107,107 @@ Route::get('/produk/{slug}', function ($slug) {
     ]);
 })->name('product.detail');
 
-// Sitemap XML - SEO Optimized
+// Sitemap XML - FIXED VERSION
 Route::get('/sitemap.xml', function () {
     $urls = [
-        // Homepage
         [
             'url' => url('/'),
-            'lastmod' => now()->toISOString(),
+            'lastmod' => now()->format('Y-m-d'),
             'changefreq' => 'weekly',
             'priority' => '1.0'
         ],
-        
-        // Product Pages
         [
             'url' => url('/produk/pin-enamel-custom-premium'),
-            'lastmod' => now()->toISOString(),
+            'lastmod' => now()->format('Y-m-d'),
             'changefreq' => 'monthly',
             'priority' => '0.9'
         ],
         [
             'url' => url('/produk/medali-prestasi-custom'),
-            'lastmod' => now()->toISOString(),
+            'lastmod' => now()->format('Y-m-d'),
             'changefreq' => 'monthly',
             'priority' => '0.9'
         ],
         [
             'url' => url('/produk/label-hijab-bordir'),
-            'lastmod' => now()->toISOString(),
+            'lastmod' => now()->format('Y-m-d'),
             'changefreq' => 'monthly',
             'priority' => '0.8'
         ],
         [
             'url' => url('/produk/souvenir-gantungan-kunci'),
-            'lastmod' => now()->toISOString(),
+            'lastmod' => now()->format('Y-m-d'),
             'changefreq' => 'monthly',
             'priority' => '0.8'
         ],
         [
             'url' => url('/produk/atribut-tni-polri'),
-            'lastmod' => now()->toISOString(),
+            'lastmod' => now()->format('Y-m-d'),
             'changefreq' => 'monthly',
             'priority' => '0.8'
         ]
     ];
 
-    $xml = '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL;
-    $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . PHP_EOL;
+    $sitemap = '<?xml version="1.0" encoding="UTF-8"?>';
+    $sitemap .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
     
     foreach ($urls as $url) {
-        $xml .= '  <url>' . PHP_EOL;
-        $xml .= '    <loc>' . $url['url'] . '</loc>' . PHP_EOL;
-        $xml .= '    <lastmod>' . $url['lastmod'] . '</lastmod>' . PHP_EOL;
-        $xml .= '    <changefreq>' . $url['changefreq'] . '</changefreq>' . PHP_EOL;
-        $xml .= '    <priority>' . $url['priority'] . '</priority>' . PHP_EOL;
-        $xml .= '  </url>' . PHP_EOL;
+        $sitemap .= '<url>';
+        $sitemap .= '<loc>' . $url['url'] . '</loc>';
+        $sitemap .= '<lastmod>' . $url['lastmod'] . '</lastmod>';
+        $sitemap .= '<changefreq>' . $url['changefreq'] . '</changefreq>';
+        $sitemap .= '<priority>' . $url['priority'] . '</priority>';
+        $sitemap .= '</url>';
     }
     
-    $xml .= '</urlset>';
+    $sitemap .= '</urlset>';
 
-    return response($xml)->header('Content-Type', 'application/xml');
+    return response($sitemap, 200, [
+        'Content-Type' => 'application/xml; charset=UTF-8'
+    ]);
 })->name('sitemap');
 
 // Robots.txt - SEO Optimized
 Route::get('/robots.txt', function () {
-    $robots = "# Robots.txt for Pin Custom Bandung - SEO Optimized" . PHP_EOL;
-    $robots .= "User-agent: *" . PHP_EOL;
-    $robots .= "Allow: /" . PHP_EOL . PHP_EOL;
+    $robots = "User-agent: *\n";
+    $robots .= "Allow: /\n\n";
     
-    // Block admin and private areas
-    $robots .= "# Block admin and private areas" . PHP_EOL;
-    $robots .= "Disallow: /admin/" . PHP_EOL;
-    $robots .= "Disallow: /dashboard/" . PHP_EOL;
-    $robots .= "Disallow: /login/" . PHP_EOL;
-    $robots .= "Disallow: /register/" . PHP_EOL;
-    $robots .= "Disallow: /password/" . PHP_EOL;
-    $robots .= "Disallow: /api/" . PHP_EOL . PHP_EOL;
+    $robots .= "# Block admin areas\n";
+    $robots .= "Disallow: /admin/\n";
+    $robots .= "Disallow: /dashboard/\n";
+    $robots .= "Disallow: /login/\n";
+    $robots .= "Disallow: /register/\n";
+    $robots .= "Disallow: /password/\n\n";
     
-    // Block Laravel system directories  
-    $robots .= "# Block Laravel system directories" . PHP_EOL;
-    $robots .= "Disallow: /storage/" . PHP_EOL;
-    $robots .= "Disallow: /vendor/" . PHP_EOL;
-    $robots .= "Disallow: /config/" . PHP_EOL;
-    $robots .= "Disallow: /bootstrap/" . PHP_EOL;
-    $robots .= "Disallow: /database/" . PHP_EOL;
-    $robots .= "Disallow: /resources/" . PHP_EOL;
-    $robots .= "Disallow: /routes/" . PHP_EOL;
-    $robots .= "Disallow: /tests/" . PHP_EOL . PHP_EOL;
+    $robots .= "# Block Laravel system directories\n";
+    $robots .= "Disallow: /storage/\n";
+    $robots .= "Disallow: /vendor/\n";
+    $robots .= "Disallow: /config/\n";
+    $robots .= "Disallow: /bootstrap/\n\n";
     
-    // Block development and temporary files
-    $robots .= "# Block development and temporary files" . PHP_EOL;
-    $robots .= "Disallow: /temp/" . PHP_EOL;
-    $robots .= "Disallow: /tmp/" . PHP_EOL;
-    $robots .= "Disallow: /*.log$" . PHP_EOL;
-    $robots .= "Disallow: /*.sql$" . PHP_EOL;
-    $robots .= "Disallow: /*.zip$" . PHP_EOL;
-    $robots .= "Disallow: /backup/" . PHP_EOL . PHP_EOL;
+    $robots .= "# Allow important paths\n";
+    $robots .= "Allow: /produk/\n";
+    $robots .= "Allow: /css/\n";
+    $robots .= "Allow: /js/\n";
+    $robots .= "Allow: /images/\n";
+    $robots .= "Allow: /build/\n\n";
     
-    // Block search and filter pages to avoid duplicate content
-    $robots .= "# Block search and filter pages" . PHP_EOL;
-    $robots .= "Disallow: /*?*" . PHP_EOL;
-    $robots .= "Disallow: /search?" . PHP_EOL;
-    $robots .= "Disallow: /filter?" . PHP_EOL . PHP_EOL;
+    $robots .= "# Social media bots\n";
+    $robots .= "User-agent: facebookexternalhit\n";
+    $robots .= "Allow: /\n\n";
     
-    // Allow important directories for SEO
-    $robots .= "# Allow important directories for SEO" . PHP_EOL;
-    $robots .= "Allow: /produk/" . PHP_EOL;
-    $robots .= "Allow: /galeri/" . PHP_EOL;
-    $robots .= "Allow: /tentang/" . PHP_EOL;
-    $robots .= "Allow: /kontak/" . PHP_EOL;
-    $robots .= "Allow: /blog/" . PHP_EOL;
-    $robots .= "Allow: /css/" . PHP_EOL;
-    $robots .= "Allow: /js/" . PHP_EOL;
-    $robots .= "Allow: /images/" . PHP_EOL;
-    $robots .= "Allow: /img/" . PHP_EOL;
-    $robots .= "Allow: /assets/" . PHP_EOL;
-    $robots .= "Allow: /build/" . PHP_EOL . PHP_EOL;
+    $robots .= "User-agent: Twitterbot\n";
+    $robots .= "Allow: /\n\n";
     
-    // Allow social media crawlers
-    $robots .= "# Allow social media crawlers" . PHP_EOL;
-    $robots .= "User-agent: facebookexternalhit" . PHP_EOL;
-    $robots .= "Allow: /" . PHP_EOL . PHP_EOL;
-    
-    $robots .= "User-agent: Twitterbot" . PHP_EOL;
-    $robots .= "Allow: /" . PHP_EOL . PHP_EOL;
-    
-    $robots .= "User-agent: LinkedInBot" . PHP_EOL;
-    $robots .= "Allow: /" . PHP_EOL . PHP_EOL;
-    
-    $robots .= "User-agent: WhatsApp" . PHP_EOL;
-    $robots .= "Allow: /" . PHP_EOL . PHP_EOL;
-    
-    // Crawl delay to prevent server overload
-    $robots .= "# Crawl delay to prevent server overload" . PHP_EOL;
-    $robots .= "Crawl-delay: 1" . PHP_EOL . PHP_EOL;
-    
-    // Sitemap location
-    $robots .= "# Sitemap location" . PHP_EOL;
-    $robots .= "Sitemap: " . url('/sitemap.xml') . PHP_EOL;
+    $robots .= "# Sitemap\n";
+    $robots .= "Sitemap: " . url('/sitemap.xml') . "\n";
 
-    return response($robots)->header('Content-Type', 'text/plain');
+    return response($robots, 200, [
+        'Content-Type' => 'text/plain; charset=UTF-8'
+    ]);
 })->name('robots');
 
-// JSON-LD Schema for Homepage (SEO)
+// JSON-LD Schema for Local Business SEO
 Route::get('/schema.json', function () {
     $schema = [
         "@context" => "https://schema.org",
@@ -256,9 +215,7 @@ Route::get('/schema.json', function () {
         "name" => "Pin Custom Bandung",
         "alternateName" => "Pin Teknik Bandung",
         "description" => "Spesialis pembuatan pin enamel custom, medali prestasi, label hijab, dan souvenir berkualitas tinggi di Bandung",
-        "image" => url('/images/logo-pin-custom.png'),
         "telephone" => "+62-815-7342-0204",
-        "email" => "info@custompinenamel.com",
         "url" => url('/'),
         "address" => [
             "@type" => "PostalAddress",
@@ -277,15 +234,6 @@ Route::get('/schema.json', function () {
         "priceRange" => "Rp15.000 - Rp100.000",
         "paymentAccepted" => ["Cash", "Bank Transfer", "E-wallet"],
         "currenciesAccepted" => "IDR",
-        "serviceArea" => [
-            "@type" => "GeoCircle",
-            "geoMidpoint" => [
-                "@type" => "GeoCoordinates",
-                "latitude" => -6.9175,
-                "longitude" => 107.6191
-            ],
-            "geoRadius" => "50000"
-        ],
         "hasOfferCatalog" => [
             "@type" => "OfferCatalog",
             "name" => "Pin Custom Services",
@@ -294,24 +242,14 @@ Route::get('/schema.json', function () {
                     "@type" => "Offer",
                     "itemOffered" => [
                         "@type" => "Service",
-                        "name" => "Pin Enamel Custom Premium",
-                        "description" => "Pin enamel custom premium dengan kualitas terbaik"
+                        "name" => "Pin Enamel Custom Premium"
                     ]
                 ],
                 [
                     "@type" => "Offer", 
                     "itemOffered" => [
                         "@type" => "Service",
-                        "name" => "Medali Prestasi Custom",
-                        "description" => "Medali prestasi untuk berbagai kompetisi dan penghargaan"
-                    ]
-                ],
-                [
-                    "@type" => "Offer",
-                    "itemOffered" => [
-                        "@type" => "Service", 
-                        "name" => "Label Hijab Bordir",
-                        "description" => "Label hijab dengan bordir premium untuk brand fashion"
+                        "name" => "Medali Prestasi Custom"
                     ]
                 ]
             ]
@@ -331,7 +269,7 @@ Route::get('/health', function () {
         'status' => 'healthy',
         'timestamp' => now()->toISOString(),
         'app_name' => config('app.name'),
-        'app_env' => config('app.env')
+        'version' => '1.0.0'
     ]);
 })->name('health');
 
