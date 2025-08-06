@@ -84,7 +84,7 @@ export default function AppLayout({
             "description": description,
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Jl. Bandung Raya",
+              "streetAddress": "Jl. Desa, No. 48, RT 06, RW 02, Kel. Babakan Sari, Kec. Kiaracondong",
               "addressLocality": "Bandung",
               "addressRegion": "Jawa Barat",
               "postalCode": "40123",
@@ -92,18 +92,18 @@ export default function AppLayout({
             },
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+62-813-1721-4457",
+              "telephone": "+62 815-7342-0204",
               "contactType": "customer service",
               "areaServed": "ID",
               "availableLanguage": "Indonesian"
             },
             "sameAs": [
-              "https://instagram.com/pincustombandung",
-              "https://facebook.com/pincustombandung"
+              "https://shopee.co.id/pinteknik",
+              "https://www.tokopedia.com/teknik-pin"
             ],
             "foundingDate": "2019",
             "numberOfEmployees": "10-50",
-            "priceRange": "$"
+            "priceRange": "Rp"
           })}
         </script>
         
@@ -115,13 +115,13 @@ export default function AppLayout({
             "name": "Pin Custom Bandung",
             "description": description,
             "url": currentUrl,
-            "telephone": "+62-813-1721-4457",
+            "telephone": "+62 815-7342-0204",
             "priceRange": "Rp5.000 - Rp100.000",
             "currenciesAccepted": "IDR",
             "paymentAccepted": "Cash, Bank Transfer",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Jl. Bandung Raya",
+              "streetAddress": "Jl. Desa, No. 48, RT 06, RW 02, Kel. Babakan Sari, Kec. Kiaracondong",
               "addressLocality": "Bandung",
               "addressRegion": "Jawa Barat",
               "postalCode": "40123",

@@ -22,7 +22,7 @@ export default function HeroSection() {
             </h1>
             
             <p className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl">
-              Dipercaya sejak 2003 sebagai mitra terbaik untuk pin enamel custom premium, medali prestasi berkualitas, label hijab bordir fashion, souvenir gantungan kunci promosi, dan atribut resmi TNI/POLRI. Pengalaman dua dekade menghadirkan kualitas terbaik, harga terjangkau, dan kepuasan pelanggan yang terjamin.
+              Dipercaya sejak 2003 sebagai mitra terbaik untuk pin enamel custom premium, medali prestasi berkualitas, label hijab bordir fashion, souvenir gantungan kunci promosi, dan pin akrilik custom. Pengalaman dua dekade menghadirkan kualitas terbaik, harga terjangkau, dan kepuasan pelanggan yang terjamin.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

@@ -20,7 +20,7 @@ export default function ProductGrid() {
     'Medali',
     'Label Hijab',
     'Souvenir',
-    'Atribut',
+    'Pin Akrilik',
   ];
 
   const products: Product[] = [
@@ -66,13 +66,13 @@ export default function ProductGrid() {
     },
     {
       id: 5,
-      name: 'Atribut TNI/POLRI',
-      category: 'Atribut',
-      price: 'Mulai Rp20.000',
+      name: 'Pin Akrilik Custom',
+      category: 'Pin Akrilik',
+      price: 'Mulai Rp15.000',
       image: '',
-      description: 'Atribut resmi TNI/POLRI dengan kualitas standar militer',
-      tags: ['Resmi', 'Militer', 'Standar'],
-      slug: 'atribut-tni-polri'
+      description: 'Pin akrilik transparan dengan desain modern dan printing berkualitas tinggi',
+      tags: ['Modern', 'Transparan', 'Ringan'],
+      slug: 'pin-akrilik-custom'
     }
   ];
 

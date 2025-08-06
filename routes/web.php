@@ -79,23 +79,23 @@ Route::get('/produk/{slug}', function ($slug) {
             ],
             'meta_description' => 'Gantungan kunci custom untuk souvenir dan corporate gift. Material logam berkualitas, berbagai design unik di Bandung.'
         ],
-        'atribut-tni-polri' => [
+        'pin-akrilik-custom' => [
             'id' => 5,
-            'name' => 'Atribut TNI/POLRI Custom',
-            'slug' => 'atribut-tni-polri',
-            'category' => 'Atribut',
-            'price' => 'Mulai dari Rp30.000',
-            'description' => 'Atribut resmi TNI/POLRI dengan kualitas standar militer dan presisi tinggi.',
+            'name' => 'Pin Akrilik Custom',
+            'slug' => 'pin-akrilik-custom',
+            'category' => 'Pin Akrilik',
+            'price' => 'Mulai dari Rp15.000',
+            'description' => 'Pin akrilik transparan dengan desain modern dan printing berkualitas tinggi. Cocok untuk event, promosi brand, atau merchandise dengan tampilan yang unik dan eye-catching.',
             'features' => [
-                'Sesuai standar resmi TNI/POLRI',
-                'Material premium zinc alloy',
-                'Detail presisi tinggi',
-                'Finishing sesuai regulasi',
-                'Garansi kesesuaian standar',
-                'Pengerjaan oleh ahli berpengalaman'
+                'Material akrilik transparan berkualitas',
+                'Printing full color HD resolution',
+                'Design modern dan eye-catching',
+                'Ringan dan nyaman digunakan',
+                'Tahan lama dan anti-scratch',
+                'Minimum order 25 pcs'
             ],
-            'meta_description' => 'Atribut TNI POLRI custom sesuai standar resmi. Material premium, detail presisi, dikerjakan ahli berpengalaman di Bandung.'
-        ]
+            'meta_description' => 'Pin akrilik custom transparan dengan printing HD. Design modern, ringan, tahan lama. Minimum order 25 pcs. Custom printing berkualitas di Bandung.',
+    ]
     ];
 
     if (!isset($products[$slug])) {

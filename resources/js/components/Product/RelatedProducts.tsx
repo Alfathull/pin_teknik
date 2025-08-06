@@ -45,12 +45,12 @@ export default function RelatedProducts({ currentProductId }: RelatedProductsPro
     },
     {
       id: 5,
-      name: "Atribut TNI/POLRI",
-      category: "Atribut",
+      name: "Pin Akrilik Csutom",
+      category: "Pin Akrilik",
       price: "Mulai Rp20.000",
       image: "",
-      description: "Atribut resmi TNI/POLRI dengan kualitas standar militer",
-      slug: "atribut-tni-polri"
+      description: "Pin akrilik transparan dengan desain modern dan printing berkualitas tinggi",
+      slug: "pin-akrilik-custom"
     }
   ];
 

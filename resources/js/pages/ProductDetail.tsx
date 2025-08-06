@@ -15,7 +15,7 @@ interface ProductDetailProps {
   };
 }
 
-type ProductSlug = 'pin-enamel-custom-premium' | 'medali-prestasi-custom' | 'label-hijab-bordir' | 'souvenir-gantungan-kunci' | 'atribut-tni-polri';
+type ProductSlug = 'pin-enamel-custom-premium' | 'medali-prestasi-custom' | 'label-hijab-bordir' | 'souvenir-gantungan-kunci' | 'pin-akrilik-custom';
 
 export default function ProductDetail({ product }: ProductDetailProps) {
   interface ProductData {
@@ -180,12 +180,12 @@ export default function ProductDetail({ product }: ProductDetailProps) {
       tags: ["Unik", "Promosi", "Murah", "Souvenir", "Custom"]
     },
 
-    'atribut-tni-polri': {
+    'pin-akrilik-custom': {
       id: 5,
-      name: "Atribut TNI/POLRI Custom",
-      category: "Atribut",
-      price: "Mulai dari Rp20.000",
-      description: "Atribut resmi TNI/POLRI dengan kualitas standar militer dan presisi tinggi. Dibuat sesuai dengan standar regulasi yang berlaku.",
+      name: "Pin Akrilik Custom",
+      category: "Pin Akrilik",
+      price: "Mulai dari Rp15.000",
+      description: "Pin akrilik transparan dengan desain modern dan printing berkualitas tinggi. Cocok untuk event, promosi brand, atau merchandise dengan tampilan yang unik dan eye-catching.",
       images: [
         "/own.png",
         "/own.png",
@@ -193,24 +193,24 @@ export default function ProductDetail({ product }: ProductDetailProps) {
         "/own.png"
       ],
       specifications: {
-        dimensions: "Sesuai standar regulasi",
-        material: "Zinc alloy grade militer",
-        weight: "10-20 gram",
-        colors: ["Sesuai standar TNI/POLRI"],
-        finishing: "Military grade coating",
-        minimum_order: "50 pcs",
-        production_time: "7-10 hari kerja"
+        dimensions: "25mm - 100mm (custom size)",
+        material: "Akrilik transparan 3mm",
+        weight: "5-15 gram",
+        colors: ["Full Color Print", "Clear", "Frosted"],
+        finishing: "UV resistant coating",
+        minimum_order: "25 pcs",
+        production_time: "5-7 hari kerja"
       },
       features: [
-        "Sesuai standar militer",
-        "Material grade A",
-        "Presisi tinggi",
-        "Tahan korosi",
-        "Quality control ketat",
-        "Sertifikat kualitas",
-        "Pengerjaan profesional"
+        "Material akrilik berkualitas tinggi",
+        "Printing full color HD resolution",
+        "Transparan dan modern",
+        "Ringan dan nyaman digunakan",
+        "Tahan UV dan anti-fade",
+        "Custom shape tersedia",
+        "Eco-friendly material"
       ],
-      tags: ["Resmi", "Militer", "Standar", "TNI", "POLRI"]
+      tags: ["Modern", "Transparan", "Ringan", "Custom", "HD Print"]
     }
   };
 
