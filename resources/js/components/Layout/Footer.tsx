@@ -22,7 +22,7 @@ export default function Footer() {
               <img 
                 src="/logo.png" 
                 alt="Pin Teknik Logo" 
-                className="h-30 w-auto"
+                className="h-40 w-auto"
               />
             </Link>
             </div>
