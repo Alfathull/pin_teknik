@@ -87,13 +87,14 @@ export default function ProductDetail({ product }: ProductDetailProps) {
       id: 2,
       name: "Medali Prestasi Custom",
       category: "Medali",
-      price: "Mulai dari Rp25.000",
+      price: "Mulai dari Rp35.000",
       description: "Medali prestasi dengan berbagai pilihan material dan finishing untuk berbagai jenis kompetisi dan penghargaan. Dibuat dengan standar kualitas tinggi untuk memberikan kesan mewah dan berkelas.",
       images: [
-        "/own.png",
-        "/own.png",
-        "/own.png",
-        "/own.png"
+        "/medali/medali4.png",
+        "/medali/medali2.png",
+        "/medali/medali3.png",
+        "/medali/medali1.png",
+        "/medali/medali5.png",
       ],
       specifications: {
         dimensions: "50mm - 80mm (diameter)",
@@ -120,13 +121,12 @@ export default function ProductDetail({ product }: ProductDetailProps) {
       id: 3,
       name: "Label Hijab Bordir Premium",
       category: "Label Hijab",
-      price: "Mulai dari Rp5.000",
+      price: "Mulai dari Rp6.000",
       description: "Label hijab dengan bordir halus dan tahan lama, cocok untuk brand fashion hijab dengan kualitas premium. Menggunakan benang berkualitas tinggi yang tidak mudah luntur.",
       images: [
-        "/own.png",
-        "/own.png",
-        "/own.png",
-        "/own.png"
+        "/label-hijab/label-hijab3.png",
+        "/label-hijab/label-hijab2.png",
+        "/label-hijab/label-hijab1.png",
       ],
       specifications: {
         dimensions: "2cm x 5cm (dapat disesuaikan)",

@@ -87,7 +87,7 @@ export default function ProductImageGallery({ images, productName }: ProductImag
         {/* Scrollable Container */}
         <div 
           ref={scrollContainerRef}
-          className="flex gap-3 overflow-x-auto scrollbar-hide pb-2"
+          className="flex gap-3 overflow-x-auto scrollbar-hide py-2 px-2"
           style={{ 
             scrollbarWidth: 'none', 
             msOverflowStyle: 'none'

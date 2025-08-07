@@ -17,7 +17,7 @@ interface AppLayoutProps {
 export default function AppLayout({ 
   children, 
   title = "Pin Enamel Custom Bandung | Jasa Pembuatan Pin, Medali & Souvenir Terbaik",
-  description = "Jasa pembuatan pin enamel custom, medali, label hijab, dan souvenir berkualitas tinggi di Bandung. Produksi cepat 3-7 hari, harga terjangkau mulai Rp5.000, gratis konsultasi desain. Trusted by 1000+ klien.",
+  description = "Jasa pembuatan pin enamel custom, medali, label hijab, dan souvenir berkualitas tinggi di Bandung. Produksi cepat 3-7 hari, harga terjangkau mulai Rp6.000, gratis konsultasi desain. Trusted by 1000+ klien.",
   keywords = "pin enamel custom bandung, jasa pembuatan pin bandung, medali custom murah, label hijab bordir, souvenir custom bandung, pin button promosi, atribut TNI POLRI, pin enamel berkualitas, merchandise custom, souvenir unik bandung",
   canonicalUrl,
   ogImage = ""
@@ -116,7 +116,7 @@ export default function AppLayout({
             "description": description,
             "url": currentUrl,
             "telephone": "+62 815-7342-0204",
-            "priceRange": "Rp5.000 - Rp100.000",
+            "priceRange": "Rp6.000 - Rp100.000",
             "currenciesAccepted": "IDR",
             "paymentAccepted": "Cash, Bank Transfer",
             "address": {

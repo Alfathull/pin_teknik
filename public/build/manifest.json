@@ -1,6 +1,6 @@
 {
-  "_AppLayout-D9DSboY9.js": {
-    "file": "assets/AppLayout-D9DSboY9.js",
+  "_AppLayout-CJ1xzFYz.js": {
+    "file": "assets/AppLayout-CJ1xzFYz.js",
     "name": "AppLayout",
     "imports": [
       "resources/js/app.tsx"
@@ -15,7 +15,7 @@
     ]
   },
   "resources/js/app.tsx": {
-    "file": "assets/app-D3hwI9K0.js",
+    "file": "assets/app-DFaZx0d0.js",
     "name": "app",
     "src": "resources/js/app.tsx",
     "isEntry": true,
@@ -28,26 +28,26 @@
     ]
   },
   "resources/js/pages/ProductDetail.tsx": {
-    "file": "assets/ProductDetail-VysHs2IK.js",
+    "file": "assets/ProductDetail-B9CG6Cme.js",
     "name": "ProductDetail",
     "src": "resources/js/pages/ProductDetail.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_AppLayout-D9DSboY9.js"
+      "_AppLayout-CJ1xzFYz.js"
     ],
     "css": [
       "assets/app-DAk4rUo7.css"
     ]
   },
   "resources/js/pages/welcome.tsx": {
-    "file": "assets/welcome-BAdm5lap.js",
+    "file": "assets/welcome-BvJZVyJb.js",
     "name": "welcome",
     "src": "resources/js/pages/welcome.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_AppLayout-D9DSboY9.js"
+      "_AppLayout-CJ1xzFYz.js"
     ],
     "css": [
       "assets/app-DAk4rUo7.css"

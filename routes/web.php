@@ -33,7 +33,7 @@ Route::get('/produk/{slug}', function ($slug) {
             'name' => 'Medali Prestasi Custom',
             'slug' => 'medali-prestasi-custom',
             'category' => 'Medali',
-            'price' => 'Mulai dari Rp25.000',
+            'price' => 'Mulai dari Rp35.000',
             'description' => 'Medali prestasi dengan berbagai pilihan material dan finishing untuk berbagai jenis kompetisi dan penghargaan.',
             'features' => [
                 'Pilihan material: kuningan, zinc alloy, stainless',
@@ -50,7 +50,7 @@ Route::get('/produk/{slug}', function ($slug) {
             'name' => 'Label Hijab Bordir Premium',
             'slug' => 'label-hijab-bordir',
             'category' => 'Label Hijab',
-            'price' => 'Mulai dari Rp5.000',
+            'price' => 'Mulai dari Rp6.000',
             'description' => 'Label hijab dengan bordir halus dan tahan lama, cocok untuk brand fashion hijab dengan kualitas premium.',
             'features' => [
                 'Bordir halus dengan benang berkualitas',
