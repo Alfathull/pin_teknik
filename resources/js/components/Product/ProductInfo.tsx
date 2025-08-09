@@ -19,7 +19,7 @@ interface ProductInfoProps {
 }
 
 export default function ProductInfo({ product }: ProductInfoProps) {
-  const [quantity, setQuantity] = useState(50);
+  const [quantity] = useState(50);
 
   const handleWhatsAppOrder = () => {
     const message = `Halo, saya tertarik dengan ${product.name}
