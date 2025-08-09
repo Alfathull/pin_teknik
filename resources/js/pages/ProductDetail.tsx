@@ -184,13 +184,11 @@ export default function ProductDetail({ product }: ProductDetailProps) {
       id: 5,
       name: "Pin Akrilik Custom",
       category: "Pin Akrilik",
-      price: "Mulai dari Rp15.000",
+      price: "Mulai dari Rp6.000",
       description: "Pin akrilik transparan dengan desain modern dan printing berkualitas tinggi. Cocok untuk event, promosi brand, atau merchandise dengan tampilan yang unik dan eye-catching.",
       images: [
-        "/own.png",
-        "/own.png",
-        "/own.png",
-        "/own.png"
+        "/pin-akrilik/pin-akrilik1.png",
+        "/pin-akrilik/pin-akrilik2.png",
       ],
       specifications: {
         dimensions: "25mm - 100mm (custom size)",

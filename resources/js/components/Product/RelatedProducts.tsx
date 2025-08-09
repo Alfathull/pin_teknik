@@ -47,8 +47,8 @@ export default function RelatedProducts({ currentProductId }: RelatedProductsPro
       id: 5,
       name: "Pin Akrilik Csutom",
       category: "Pin Akrilik",
-      price: "Mulai Rp20.000",
-      image: "",
+      price: "Mulai Rp6.000",
+      image: "/pin-akrilik/pin-akrilik1.png",
       description: "Pin akrilik transparan dengan desain modern dan printing berkualitas tinggi",
       slug: "pin-akrilik-custom"
     }

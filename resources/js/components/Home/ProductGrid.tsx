@@ -68,8 +68,8 @@ export default function ProductGrid() {
       id: 5,
       name: 'Pin Akrilik Custom',
       category: 'Pin Akrilik',
-      price: 'Mulai Rp15.000',
-      image: '',
+      price: 'Mulai Rp6.000',
+      image: '/pin-akrilik/pin-akrilik1.png',
       description: 'Pin akrilik transparan dengan desain modern dan printing berkualitas tinggi',
       tags: ['Modern', 'Transparan', 'Ringan'],
       slug: 'pin-akrilik-custom'

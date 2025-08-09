@@ -67,7 +67,7 @@ Route::get('/produk/{slug}', function ($slug) {
             'name' => 'Souvenir Gantungan Kunci Custom',
             'slug' => 'souvenir-gantungan-kunci',
             'category' => 'Souvenir',
-            'price' => 'Mulai dari Rp15.000',
+            'price' => 'Mulai dari Rp20.000',
             'description' => 'Gantungan kunci custom dengan desain unik dan menarik untuk souvenir acara atau promosi brand.',
             'features' => [
                 'Material logam berkualitas',
@@ -84,7 +84,7 @@ Route::get('/produk/{slug}', function ($slug) {
             'name' => 'Pin Akrilik Custom',
             'slug' => 'pin-akrilik-custom',
             'category' => 'Pin Akrilik',
-            'price' => 'Mulai dari Rp15.000',
+            'price' => 'Mulai dari Rp6.000',
             'description' => 'Pin akrilik transparan dengan desain modern dan printing berkualitas tinggi. Cocok untuk event, promosi brand, atau merchandise dengan tampilan yang unik dan eye-catching.',
             'features' => [
                 'Material akrilik transparan berkualitas',
@@ -231,7 +231,7 @@ Route::get('/schema.json', function () {
             "longitude" => 107.6191
         ],
         "openingHours" => "Mo-Sa 08:00-17:00",
-        "priceRange" => "Rp15.000 - Rp100.000",
+        "priceRange" => "Rp6.000 - Rp100.000",
         "paymentAccepted" => ["Cash", "Bank Transfer", "E-wallet"],
         "currenciesAccepted" => "IDR",
         "hasOfferCatalog" => [
