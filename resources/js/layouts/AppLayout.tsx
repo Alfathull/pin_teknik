@@ -18,7 +18,7 @@ export default function AppLayout({
   children, 
   title = "Pin Enamel Custom Bandung | Jasa Pembuatan Pin, Medali & Souvenir Terbaik",
   description = "Jasa pembuatan pin enamel custom, medali, label hijab, dan souvenir berkualitas tinggi di Bandung. Produksi cepat 3-7 hari, harga terjangkau mulai Rp6.000, gratis konsultasi desain. Trusted by 1000+ klien.",
-  keywords = "pin enamel custom bandung, jasa pembuatan pin bandung, medali custom murah, label hijab bordir, souvenir custom bandung, pin button promosi, atribut TNI POLRI, pin enamel berkualitas, merchandise custom, souvenir unik bandung",
+  keywords = "pin custom, custom pin enamel, enamel custom, pins enamel bandung",
   canonicalUrl,
   ogImage = ""
 }: AppLayoutProps) {
