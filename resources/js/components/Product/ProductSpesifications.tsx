@@ -40,7 +40,7 @@ export default function ProductSpecifications({ specifications }: ProductSpecifi
       step: 3,
       title: "Produksi",
       description: "Proses produksi menggunakan mesin modern dan quality control ketat",
-      duration: "3-5 hari"
+      duration: "3-8 hari"
     },
     {
       step: 4,

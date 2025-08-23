@@ -134,8 +134,8 @@ export default function ProductDetail({ product }: ProductDetailProps) {
         weight: "2-3 gram",
         colors: ["Hitam", "Putih", "Navy", "Custom sesuai brand"],
         finishing: "Bordir halus, Heat cut, Ultrasonic cut",
-        minimum_order: "100 pcs",
-        production_time: "3-5 hari kerja"
+        minimum_order: "1000 pcs",
+        production_time: "7-8 hari kerja"
       },
       features: [
         "Bordir halus dan rapi",
