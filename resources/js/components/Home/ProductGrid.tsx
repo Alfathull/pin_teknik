@@ -49,7 +49,7 @@ export default function ProductGrid() {
       name: 'Label Hijab Bordir',
       category: 'Label Hijab',
       price: 'Mulai Rp6.000',
-      image: '/label-hijab/label-hijab3.png',
+      image: '/label-hijab/label-hijab1.png',
       description: 'Label hijab dengan bordir halus dan tahan lama untuk brand fashion',
       tags: ['Bordir', 'Fashion', 'Halus'],
       slug: 'label-hijab-bordir'

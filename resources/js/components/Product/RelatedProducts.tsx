@@ -30,7 +30,7 @@ export default function RelatedProducts({ currentProductId }: RelatedProductsPro
       name: "Label Hijab Bordir",
       category: "Label Hijab",
       price: "Mulai Rp6.000",
-      image: "/label-hijab/label-hijab3.png",
+      image: "/label-hijab/label-hijab1.png",
       description: "Label hijab dengan bordir halus untuk brand fashion",
       slug: "label-hijab-bordir"
     },

@@ -124,9 +124,9 @@ export default function ProductDetail({ product }: ProductDetailProps) {
       price: "Mulai dari Rp6.000",
       description: "Label hijab dengan bordir halus dan tahan lama, cocok untuk brand fashion hijab dengan kualitas premium. Menggunakan benang berkualitas tinggi yang tidak mudah luntur.",
       images: [
-        "/label-hijab/label-hijab3.png",
-        "/label-hijab/label-hijab2.png",
         "/label-hijab/label-hijab1.png",
+        "/label-hijab/label-hijab2.png",
+        "/label-hijab/label-hijab3.png",
       ],
       specifications: {
         dimensions: "2cm x 5cm (dapat disesuaikan)",
